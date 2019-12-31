@@ -5,7 +5,7 @@ FROM node:alpine
 WORKDIR /app
 
 #copying dependencies files
-COPY ./package.json .
+COPY ./package.json ./
 
 # Installing dependencies
 RUN npm install
@@ -14,4 +14,4 @@ RUN npm install
 COPY . .
 
 # commands 
-CMD [ "npm", "start" ]
+CMD [ "npm", "run", "start" ]
